@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <title>Document</title>
+     </head>
+     <body>
+          <h1 id="titulo" onmouseout="azul(this)" onmouseover="rojo(this)">TITULO PREVIO</h1>
+          <h2 id="titulo2" onmousedown="azul(this)" onmouseup="rojo(this)">CAMBIO CON CLICK</h2>
+          <br>
+          <input type="text" id="nombre" onchange="convertir(this)">
+
+          <script>
+               
+               function convertir(nombre){
+                    nombre.value=nombre.value.toUpperCase();
+               }
+               function rojo(elemento){
+                    elemento.style.color="red";
+               }
+               function azul(elemento){
+                    elemento.style.color="green";
+               }
+          </script>
+     </body>
+</html>

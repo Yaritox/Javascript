@@ -1,0 +1,46 @@
+<!--DOM DE HTML todo los elementos del DOM son objetos-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplo DOM JS</title>
+    <style>
+         .azul{
+              color:aquamarine;
+         }
+    </style>
+  </head>
+  <body>
+       <h1 class="azul" id="titulo">Ejemplo DOM JS</h1>
+       <p class="azul" id="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem qui voluptate minima, illo, saepe doloribus facilis voluptatem quaerat consequatur nobis molestiae consectetur illum nulla. Possimus repellat quasi quo quibusdam?</p>
+       <p class="azul" id="parrafo2">Parrafo 2 </p>
+       <p  id="parrafo2">Parrafo 3 </p>
+       <script>
+            //PARA CONFIGURAR DOM DEBE DE ESTAR DESPUÉS 
+          console.log('Saludos desde JS');
+          let titulo=document.getElementById('titulo');
+          let parrafo=document.getElementById('parrafo');
+          console.log(titulo.innerHTML);
+          console.log(parrafo.innerHTML);
+          parrafo.innerHTML="Este es el nuevo parrafo";
+          titulo.innerHTML="Este es el nuevo titulo";
+
+          //TODOS LOS PARRAFOS DE UN TIPO 
+          let parrafos=document.getElementsByTagName("p");
+          console.log(parrafos.length);
+          for(let i=0;i<parrafos.length;i++){
+               console.log(`parrafo ${i} - ${parrafos[i].innerHTML} `);
+          }
+
+          let elementosazules=document.getElementsByClassName('azul');
+          for(let elemento of elementosazules){
+               console.log(`Elemento azul - ${elemento.innerHTML}`)
+          }
+
+          let parrafosazules=document.querySelectorAll('p.azul');
+          for(let elemento of parrafosazules){
+               console.log(`Parrafos azul - ${elemento.innerHTML}`)
+          }
+       </script>
+  </body>
+</html>

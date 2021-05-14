@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <title>Document</title>
+     </head>
+     <body>
+          Nombre: <input type="text" id="nombre" name="nombre" onblur="regresar(this)" onfocus="cambiar(this)">
+          Apellido: <input type="text" id="apellido" name="apellido" onblur="regresar(this)" onfocus="cambiar(this)">
+          <script>
+               function cambiar(elemento){
+                    elemento.style.background='red';
+               }
+               function regresar(elemento){
+                    elemento.style.background='white';
+               }
+          </script>
+     </body>
+</html>

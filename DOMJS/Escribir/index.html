@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+       <h1 id="titulo">TITULO PREVIO</h1>
+       <button onclick="mostrar()">Cambiar toda la pagina pagina</button>
+       <button onclick="mostrar2()">Cambiar solo titulo</button>
+       <button onclick="mostrar3()">Agregar cosas al titulo</button>
+       <script>
+            function mostrar(){
+                 document.write('Saludo desde java');
+            }
+            function mostrar2(){
+                 document.getElementById('titulo').innerHTML="CAMBIO EL TITULO";
+            }
+            function mostrar3(){
+                 document.getElementById('titulo').innerHTML+="AGREGO COSAS EN  EL TITULO";
+            }
+       </script>
+  </body>
+</html>

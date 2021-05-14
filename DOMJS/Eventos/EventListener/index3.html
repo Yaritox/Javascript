@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <title>Document</title>
+     </head>
+     <body>
+          <form id="formulario">
+               Nombre: <input type="text" id="nombre" name="nombre" >
+               Apellido: <input type="text" id="apellido" name="apellido" >
+          </form>
+          <script>
+               let formulario=document.getElementById('formulario');
+               formulario.addEventListener('focus',(evento)=>{
+                    elemento=evento.target;
+                    elemento.style.background="pink";
+               },true);
+               formulario.addEventListener('blur',(evento)=>{
+                    elemento=evento.target;
+                    elemento.style.background="";
+               },true);
+          </script>
+     </body>
+</html>

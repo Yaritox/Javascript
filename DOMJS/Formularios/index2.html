@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+          <form id="formulario">
+               nombre: <input type="text" name="nombre" id="nombre" value="Jordi">
+               apellido: <input type="text" name="apellido" id="apellido" value="Cruz">
+          </form>
+          <button onclick="mostrarValores()">Ir</button>
+          <div id="resultado"></div>
+          <script>
+               function mostrarValores(){
+                    //Recuperar formulario
+                    let formulario=document.forms['formulario'];
+                    let nombre=formulario['nombre'];
+                    let apellido=formulario['apellido'];
+                    let texto=nombre.value+"<br>"+apellido.value;
+                    let resultado=document.getElementById('resultado');
+                    resultado.innerHTML=texto;
+               }
+          </script>
+  </body>
+</html>

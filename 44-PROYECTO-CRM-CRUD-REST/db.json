@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nombre": "Jordi Jaromil",
+      "email": "mail@mail.com",
+      "telefono": "2481308139",
+      "empresa": "UPTLAX",
+      "id": 1
+    }
+  ]
+}

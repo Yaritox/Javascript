@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <title>Document</title>
+     </head>
+     <body onload="entrar()">
+          <h1 id="titulo">TITULO PREVIO</h1>
+          <p id="mostrar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis doloremque tempore dolore odit pariatur blanditiis! Quibusdam vel impedit inventore distinctio ad possimus, consequatur quae ullam perspiciatis eaque a, recusandae vitae.</p>
+
+          <script>
+               
+               function entrar(){
+                    alert('Entrando a la página web');
+                    let texto;
+                    if(navigator.cookieEnabled)
+                         texto="Cookies habilitadas"
+                    else
+                         texto="Cookies INhabilitadas"
+
+                    document.getElementById('mostrar').innerHTML=texto;
+               }
+          </script>
+     </body>
+</html>
